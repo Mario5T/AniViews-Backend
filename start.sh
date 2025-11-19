@@ -1,7 +1,7 @@
 set -e
-cd backend
+
+echo "Installing dependencies..."
 npm install --production
 
+echo "Starting server..."
 npm start
-
-chmod +x start.sh
