@@ -12,7 +12,7 @@ import threadsRoutes from './routes/threads.routes.js';
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.get('/api/health', (req, res) => res.json({ ok: true }));
 
